@@ -23,10 +23,10 @@ public class SpringDataJpaExApplication {
 //		s1.setName("Navin");
 //		s1.setMarks(75);
 //
-//		s2.setRollNo(102);
-//		s2.setName("Jith");
-//		s2.setMarks(100);
-//
+		s2.setRollNo(102);
+		s2.setName("Jith");
+		s2.setMarks(100);
+
 //		s3.setRollNo(103);
 //		s3.setName("Sop");
 //		s3.setMarks(80);
@@ -35,6 +35,7 @@ public class SpringDataJpaExApplication {
 //		System.out.println(s.orElse(new Student()));
 
 		System.out.println(repo.findByName("Navin"));
+		repo.delete(s2);
 
 	}
 
